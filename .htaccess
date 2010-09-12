@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^loki/?$ loki/awstats.cgi [L]
+RewriteRule ^info/?$ info.php [L]
+RewriteRule ^js?$ http://www.activatejavascript.org [L]
+RewriteRule ^rss/(.*)/$ /rss.php?restaurant=$1 [L]
+RewriteRule ^toolo/$ /töölö/ [L,R=301]
+RewriteRule ^(.*)/tanaan/$ /$1/tänään [L,R=301]
+RewriteRule ^(.*)/(.*)/$ /index.php?campus=$1&day=$2 [L]
+RewriteRule ^(.*)/$ /index.php?campus=$1 [L]
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://testiserveri.nfshost.com/$1/ [L,R=301]

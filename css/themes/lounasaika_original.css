@@ -1,0 +1,40 @@
+body {
+background-color: #e2ebed;
+}
+
+body, a:link, a:visited, a:hover {
+color: #fafafa;
+}
+
+#header {
+background: #1f587c;
+background: -webkit-gradient(linear, right top, left bottom, color-stop(0.3, #3a7599), color-stop(0.75, #1f587c));
+background: -moz-linear-gradient(85deg, #1f587c 30%, #3a7599 75%);
+background: -o-linear-gradient(85deg, #1f587c 30%, #3a7599 75%);
+background: linear-gradient(85deg, #1f587c 30%, #3a7599 75%);
+}
+
+.restaurant_name {
+color: #DDF7FF;
+background: #1f587c;
+}
+
+.open_hours {
+background: #3b80ac;
+}
+
+.meals {
+color: #222;
+}
+
+/* navigation buttons */
+.nav a div {
+color: #d6d6d6;
+background-color: #1f587c;
+}
+
+/* navigation button when active or hovered */
+.nav a div.active, .nav a div:hover {
+color: #fff;
+background: #3c81ac;
+}

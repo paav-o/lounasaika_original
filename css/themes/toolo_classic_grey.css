@@ -1,0 +1,36 @@
+body {
+background-color: #fff;
+}
+
+body, a:link, a:visited, a:hover {
+color: #fff;
+}
+
+#header {
+background-color: #666;
+}
+
+.restaurant_name {
+color: #DDF7FF;
+background-color: #666;
+}
+
+.open_hours {
+background-color: #989898;
+}
+
+.meals {
+color: #000;
+}
+
+/* navigation buttons */
+.nav a div {
+color: #f4f4f4;
+background-color: #989898;
+}
+
+/* navigation button when active or hovered */
+.nav a div.active, .nav a div:hover {
+color: #fff;
+background-color: #666;
+}

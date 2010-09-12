@@ -1,0 +1,358 @@
+/* general css */
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 0.7em;
+margin: 0 1%;
+min-width: 800px;
+}
+
+a:link, a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+img { border: 0; }
+
+/* header */
+
+#header {
+height: 75px;
+margin-top: 10px;
+border-top: 1px solid #282828;
+border-bottom: 1px solid #282828;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+}
+
+#logo {
+margin: 7px 0 0 10px;
+float: left;
+}
+
+#subheader_wrapper {
+margin: 13px 0 0 15px;
+float: left;
+}
+
+h1 {
+font-family: Arial, sans-serif;
+font-size: 25px;
+font-weight: bold;
+margin: 0 0 2px 0;
+}
+
+h1 a {
+text-decoration: none !important;
+}
+
+#slogan {
+font-size: 11px;
+}
+
+.header_inside {
+text-align: right;
+width: 99%;
+margin: 5px 5px 20px 5px;
+}
+
+/* navigation buttons */
+
+.nav {
+float: left;
+padding: 0;
+margin: 5px 25px 7px 0;
+}
+
+.nav a {
+display: block;
+float: left;
+margin: 3px 5px 3px 0;
+}
+
+.nav a div {
+padding: 2px 8px 3px 8px;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+}
+
+.nav a div.active,
+.nav a div:hover {
+padding: 1px 7px 2px 7px;
+border: 1px solid #282828;
+}
+
+.nav a div:hover {
+border: 1px solid #184351;
+}
+
+.nav a:hover {
+text-decoration: none;
+}
+
+/* color theme selection */
+
+#themes {
+display: none;
+float: left;
+}
+
+.theme {
+width: 2px;
+height: 12px;
+}
+
+.theme:hover {
+border-color: #ccc !important;
+}
+
+.theme#lounasaika_original {
+background: #1c4f6f;
+background: -webkit-gradient(linear, right bottom, left top, color-stop(0.5, #1c4f6f), color-stop(0, #e2ebed));
+background: -moz-linear-gradient(-45deg, #1c4f6f 50%, #e2ebed 0%);
+background: -o-linear-gradient(-45deg, #1c4f6f 50%, #e2ebed 0%);
+background: linear-gradient(-45deg, #1c4f6f 50%, #e2ebed 0%);
+}
+
+.theme#otaniemi_classic {
+background: #1A4A5A;
+background: -webkit-gradient(linear, right bottom, left top, color-stop(0.5, #1a4a5a), color-stop(0, #27758e));
+background: -moz-linear-gradient(-45deg, #1a4a5a 50%, #27758e 0%);
+background: -o-linear-gradient(-45deg, #1a4a5a 50%, #27758e 0%);
+background: linear-gradient(-45deg, #1a4a5a 50%, #27758e 0%);
+}
+
+.theme#toolo_classic_blue {
+background: #3366ff;
+background: -webkit-gradient(linear, right bottom, left top, color-stop(0.5, #3366ff), color-stop(0, #fff));
+background: -moz-linear-gradient(-45deg, #3366ff 50%, #fff 0%);
+background: -o-linear-gradient(-45deg, #3366ff 50%, #fff 0%);
+background: linear-gradient(-45deg, #3366ff 50%, #fff 0%);
+}
+
+.theme#toolo_classic_green {
+background: #009900;
+background: -webkit-gradient(linear, right bottom, left top, color-stop(0.5, #009900), color-stop(0, #fff));
+background: -moz-linear-gradient(-45deg, #009900 50%, #fff 0%);
+background: -o-linear-gradient(-45deg, #009900 50%, #fff 0%);
+background: linear-gradient(-45deg, #009900 50%, #fff 0%);
+}
+
+.theme#toolo_classic_grey {
+background: #666;
+background: -webkit-gradient(linear, right bottom, left top, color-stop(0.5, #666), color-stop(0, #fff));
+background: -moz-linear-gradient(-45deg, #666 50%, #fff 0%);
+background: -o-linear-gradient(-45deg, #666 50%, #fff 0%);
+background: linear-gradient(-45deg, #666 50%, #fff 0%);
+}
+
+/* all restaurants */
+
+#loader {
+display: block;
+margin: 5% auto; 
+}
+
+.restaurants {
+clear: both;
+}
+
+/* single restaurants */
+
+.restaurant {
+float: left;
+width: 25%;
+margin-bottom: 20px;
+}
+
+.restaurant_name {
+border-top: 1px solid #282828;
+display: block;
+margin: 0;
+padding: 4px 15px 4px 5px;
+}
+
+h2 {
+font-weight: bold;
+font-size: 0.95em;
+margin: 0;
+display: inline;
+}
+
+.rss {
+margin-right: 10px;
+float: right;
+cursor: default;
+}
+
+.rss img {
+margin-bottom: -2px;
+opacity: 0.8;
+}
+
+.rss img:hover {
+opacity: 1.0;
+}
+
+.open_hours {
+padding: 3px 0 3px 50px;
+border-bottom: 1px solid #282828;
+margin: 0;
+padding: 3px 15px 3px 5px;
+clear: both;
+}
+
+.closed {
+opacity: 0.6;
+padding: 0 15px 0 0;
+}
+
+.meals {
+padding: 5px 15px 0 5px;
+overflow: hidden;
+}
+
+.tooltip {
+cursor: pointer;
+}
+
+.tooltip:hover {
+text-decoration: none;
+}
+
+/* TipTip CSS - Version 1.2 */
+
+#tiptip_holder {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99999;
+}
+
+#tiptip_holder.tip_top {
+padding-bottom: 5px;
+}
+
+#tiptip_holder.tip_bottom {
+padding-top: 5px;
+}
+
+#tiptip_holder.tip_right {
+padding-left: 5px;
+}
+
+#tiptip_holder.tip_left {
+padding-right: 5px;
+}
+
+#tiptip_content {
+font-size: 10px;
+color: #fff;
+text-shadow: 0 0 2px #000;
+padding: 6px;
+border: 1px solid rgba(255,255,255,0.25);
+background-color: rgb(25,25,25);
+background-color: rgba(25,25,25,0.92);
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+box-shadow: 2px 2px 3px #333;
+-webkit-box-shadow: 2px 2px 3px #333;
+-moz-box-shadow: 2px 2px 3px #333;
+}
+
+#tiptip_content dl {
+margin: 0;
+padding: 5px 7px 10px 7px;
+}
+
+#tiptip_content dl dt {
+margin-top: 3px;
+font-weight: bold;
+font-style: normal;
+}
+
+#tiptip_content dl dd {
+margin: 3px 0 0 15px;
+}
+
+#tiptip_content img {
+margin-top: 5px;
+}
+
+#tiptip_arrow, #tiptip_arrow_inner {
+position: absolute;
+border-color: transparent;
+border-style: solid;
+border-width: 6px;
+height: 0;
+width: 0;
+}
+
+#tiptip_holder.tip_top #tiptip_arrow {
+border-top-color: #fff;
+border-top-color: rgba(255,255,255,0.35);
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow {
+border-bottom-color: #fff;
+border-bottom-color: rgba(255,255,255,0.35);
+}
+
+#tiptip_holder.tip_right #tiptip_arrow {
+border-right-color: #fff;
+border-right-color: rgba(255,255,255,0.35);
+}
+
+#tiptip_holder.tip_left #tiptip_arrow {
+border-left-color: #fff;
+border-left-color: rgba(255,255,255,0.35);
+}
+
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+margin-top: -7px;
+margin-left: -6px;
+border-top-color: rgb(25,25,25);
+border-top-color: rgba(25,25,25,0.92);
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+margin-top: -5px;
+margin-left: -6px;
+border-bottom-color: rgb(25,25,25);
+border-bottom-color: rgba(25,25,25,0.92);
+}
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+margin-top: -6px;
+margin-left: -5px;
+border-right-color: rgb(25,25,25);
+border-right-color: rgba(25,25,25,0.92);
+}
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+margin-top: -6px;
+margin-left: -7px;
+border-left-color: rgb(25,25,25);
+border-left-color: rgba(25,25,25,0.92);
+}
+
+/* Webkit Hacks for TipTip */
+@media screen and (-webkit-min-device-pixel-ratio:0) {	
+#tiptip_content {
+padding: 4px 8px 5px 8px;
+background-color: rgba(45,45,45,0.88);
+}
+#tiptip_holder.tip_bottom #tiptip_arrow_inner { 
+border-bottom-color: rgba(45,45,45,0.88);
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner { 
+border-top-color: rgba(20,20,20,0.92);
+}
+}
